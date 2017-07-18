@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
             mLocationRequest.setFastestInterval(5000);
             mLocationRequest.setSmallestDisplacement(100);
             LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,
-                    mLocationRequest, (LocationListener) this);
+                    mLocationRequest, this);
 
         } else {
             mLocation = null;
